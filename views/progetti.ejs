@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+<main class="container mt-5 pt-5 mb-5">
+    <h1 class="display-4 mb-3" style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;"><%= __('projects_main_title') %></h1>
+    <p class="lead text-muted mb-5"><%= __('projects_subtitle') %></p>
+
+    <h3 class="mb-4" style="color: var(--accent); font-family: 'JetBrains Mono', monospace;">// <%= __('section_github') %></h3>
+    <div id="github-projects" class="row g-4 mb-5">
+        <div class="col-12 text-center py-5">
+            <div class="spinner-border" style="color: var(--accent);" role="status"></div>
+        </div>
+    </div>
+
+    <hr class="my-5" style="border-color: var(--border);">
+
+    <h3 class="mb-4" style="color: var(--accent); font-family: 'JetBrains Mono', monospace;">// <%= __('section_others') %></h3>
+    <div id="manual-projects" class="row g-4">
+        </div>
+</main>
+
+<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="background-color: var(--nav-bg); border: 1px solid var(--border);">
+            <div class="modal-header" style="border-bottom: 1px solid var(--border);">
+                <h5 class="modal-title" id="modalTitle" style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+            <div class="modal-body" id="modalBody" style="color: var(--text-main);"></div>
+            <div class="modal-footer" style="border-top: 1px solid var(--border);">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><%= __('btn_close') %></button>
+                <a href="#" id="modalLink" target="_blank" class="btn btn-custom"><%= __('btn_open_github') %></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

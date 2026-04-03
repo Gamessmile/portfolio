@@ -1,0 +1,259 @@
+:root, [data-theme="light"] {
+    --body-bg: #f3f4f6;
+    --nav-bg: #f9fafb;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --border: #d1d5db;
+    --btn-hover-filter: brightness(1.2);
+}
+
+[data-theme="dark"] {
+    --body-bg: #22272e;
+    --nav-bg: #2d333b;
+    --text-main: #adbac7;
+    --text-muted: #768390;
+    --border: #444c56;
+    --btn-hover-filter: brightness(1.2);
+}
+
+[data-theme="true-black"] {
+    --body-bg: #050505;
+    --nav-bg: #0a0a0a;
+    --text-main: #e5e5e5;
+    --text-muted: #a3a3a3;
+    --border: #262626;
+    --btn-hover-filter: brightness(0.8);
+}
+
+body {
+    padding-top: 70px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-bg) !important;
+    color: var(--text-main);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.navbar-color {
+    background-color: var(--nav-bg) !important;
+    border-bottom: 1px solid var(--border);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.navbar-color .navbar-brand {
+    color: var(--text-main) !important;
+}
+
+.navbar-color .navbar-text {
+    color: var(--text-muted) !important;
+}
+
+.navbar-color .nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-color .nav-link:hover,
+.navbar-color .nav-link.active {
+    color: var(--text-main) !important;
+    font-weight: 700;
+}
+
+.btn-custom {
+    background-color: var(--text-main) !important;
+    color: var(--body-bg) !important;
+    border: 1px solid var(--text-main) !important;
+    border-radius: 6px; 
+    padding: 0.75rem 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--text-main) !important;
+    color: var(--body-bg) !important;
+    filter: var(--btn-hover-filter) !important;
+}
+
+.custom-footer {
+    border-top: 1px solid var(--border);
+}
+
+.footer-link {
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-main);
+}
+
+.theme-pill {
+    display: inline-flex;
+    background-color: var(--body-bg);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 4px;
+    gap: 4px;
+    margin-left: 1rem;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.theme-btn {
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+    color: var(--text-main);
+}
+
+.theme-btn.active {
+    background-color: var(--text-main);
+    color: var(--body-bg);
+}
+
+.card-hover-elevate {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    border: 1px solid var(--border);
+}
+
+.card-hover-elevate:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px -10px var(--text-main);
+}
+
+.modal-content {
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.card-clickable {
+    cursor: pointer;
+}
+
+#modalBody img {
+    max-width: 100%;
+    height: auto;
+}
+
+#modalBody table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+#modalBody th, #modalBody td {
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+}
+
+#modalBody .anchor {
+    display: none !important;
+}
+
+html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-mask {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, var(--body-bg));
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+.custom-footer {
+    border-top: 1px solid var(--border);
+    position: relative;
+    z-index: 20;
+    margin-top: 8rem !important; 
+    padding-top: 2rem !important;
+}
+
+.dropdown-menu {
+    background-color: var(--nav-bg) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.dropdown-item {
+    color: var(--text-muted) !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--body-bg) !important;
+    color: var(--text-main) !important;
+}
+
+.lang-btn {
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--nav-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px 25px;
+    z-index: 9999;
+    display: none; /* Nascosto di default */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cookie-content {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    margin-right: 15px;
+}

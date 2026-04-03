@@ -1,0 +1,43 @@
+{
+    "whitelisted_repos": [
+        "Gamessmile/Gioco_di_Ruolo.DB",
+        "Gamessmile/Progetto-UX_Cinebium",
+        "Marc0-dev/iot-prog"
+    ],
+    
+    "skills": {
+        "Sviluppo Software & Back-End": [
+            {"name": "Java", "color": "#b07219", "url": "https://dev.java/"},
+            {"name": "Spring Boot", "color": "#6db33f", "url": "https://spring.io/projects/spring-boot"},
+            {"name": "C", "color": "#A8B9CC", "url": "https://en.cppreference.com/w/c"},
+            {"name": "C++", "color": "#00599C", "url": "https://cplusplus.com/"},
+            {"name": "C#", "color": "#239120", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"},
+            {"name": "PHP", "color": "#4F5D95", "url": "https://www.php.net/"},
+            {"name": "Laravel", "color": "#FF2D20", "url": "https://laravel.com/"},
+            {"name": "Node.js", "color": "#339933", "url": "https://nodejs.org/"},
+            {"name": "Express", "color": "#808080", "url": "https://expressjs.com/"},
+            {"name": "Python", "color": "#3572A5", "url": "https://www.python.org/"},
+            {"name": "Processing", "color": "#009688", "url": "https://processing.org/"}
+        ],
+        "Front-End & UX/UI": [
+            {"name": "HTML5", "color": "#E34F26", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+            {"name": "CSS3", "color": "#1572B6", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+            {"name": "JavaScript", "color": "#F7DF1E", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+            {"name": "UX Design", "color": "#FF00FF", "url": "https://www.nngroup.com/articles/definition-user-experience/"},
+            {"name": "UI Design", "color": "#FF00FF", "url": "https://en.wikipedia.org/wiki/User_interface_design"},
+            {"name": "Figma", "color": "#F24E1E", "url": "https://www.figma.com/"},
+            {"name": "Wireframing", "color": "#8A2BE2", "url": "https://en.wikipedia.org/wiki/Website_wireframe"}
+        ],
+        "Database & Dev Tools": [
+            {"name": "SQL", "color": "#CC292B", "url": "https://en.wikipedia.org/wiki/SQL"},
+            {"name": "MySQL", "color": "#4479A1", "url": "https://www.mysql.com/"},
+            {"name": "Relational Data Analysis", "color": "#00b4ab", "url": "https://en.wikipedia.org/wiki/Relational_database"},
+            {"name": "Triggers", "color": "#e38c00", "url": "https://en.wikipedia.org/wiki/Database_trigger"},
+            {"name": "Stored Procedures", "color": "#e38c00", "url": "https://en.wikipedia.org/wiki/Stored_procedure"},
+            {"name": "Android Studio", "color": "#3DDC84", "url": "https://developer.android.com/studio"},
+            {"name": "VS Code", "color": "#007ACC", "url": "https://code.visualstudio.com/"},
+            {"name": "Git", "color": "#F05032", "url": "https://git-scm.com/"},
+            {"name": "GitHub", "color": "#888888", "url": "https://github.com/"}
+        ]
+    }
+}

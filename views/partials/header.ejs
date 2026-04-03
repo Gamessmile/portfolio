@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="<%= currentLang %>">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %> | Alessandro Sciacca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+    <script>
+        (function() {
+            let savedTheme = localStorage.getItem('site-theme');
+            if (!savedTheme) {
+                savedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container d-flex align-items-center">
+            
+            <div class="d-flex align-items-baseline">
+                <a class="navbar-brand mb-0 h1" href="/">Santo Alessandro Sciacca</a>
+                <span class="text-secondary ms-2" style="font-size: 0.9rem;">Portfolio</span>
+            </div>
+
+            <div class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                <a class="nav-link me-3" href="/"><%= __('nav_home') %></a>
+                <a class="nav-link me-3" href="/progetti"><%= __('nav_projects') %></a>
+                <a class="nav-link" href="/lab"><%= __('nav_lab') %></a>
+                
+                <div class="dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-transform: uppercase; font-family: 'JetBrains Mono', monospace; font-weight: bold;">
+                        <%= currentLang %>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="languageSelector" style="min-width: 5rem;">
+                        <% availableLangs.forEach(lang => { %>
+                            <li>
+                                <a class="dropdown-item lang-switch" href="#" data-lang="<%= lang %>" style="text-transform: uppercase; font-weight: 600; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
+                                    <%= lang %> <%= currentLang === lang ? '●' : '' %>
+                                </a>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </div>
+
+                <div class="theme-pill ms-3">
+                    <button class="theme-btn" data-set-theme="light">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
+                    </button>
+                    <button class="theme-btn" data-set-theme="dark">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/></svg>
+                    </button>
+                    <button class="theme-btn" data-set-theme="true-black">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </nav>

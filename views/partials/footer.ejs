@@ -1,0 +1,26 @@
+<div class="scroll-mask" id="scrollMask"></div>
+
+<footer class="container py-4 custom-footer">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-3 mb-md-0 text-muted" style="font-size: 0.875rem;">
+            &copy; <span id="dynamic-year"></span> Gamessmile
+        </div>
+        <div>
+            <a href="https://github.com/Gamessmile" target="_blank" class="text-decoration-none me-3 footer-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/santo-alessandro-sciacca/" target="_blank" class="text-decoration-none me-3 footer-link">LinkedIn</a>
+            <a href="mailto:latuaemail@esempio.com" class="text-decoration-none footer-link">Email</a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="/js/script.js"></script>
+
+<div id="cookieBanner" class="cookie-banner container">
+    <span class="cookie-content">
+        <svg width="18" height="18" fill="currentColor" class="me-2" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/><path d="M8 4a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 8.293V4.5A.5.5 0 0 1 8 4z"/></svg>
+        <%= __('cookie_msg') %>
+    </span>
+    <button id="closeCookie" class="btn btn-sm btn-custom"><%= __('cookie_btn') %></button>
+</div>
+</body>
+</html>
