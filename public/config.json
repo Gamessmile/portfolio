@@ -23,6 +23,7 @@
         "Front-End & UX/UI": [
             {"name": "HTML5", "color": "#E34F26", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
             {"name": "CSS3", "color": "#1572B6", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+            {"name": "EJS", "color": "#A91E50", "url": "https://ejs.co/"},
             {"name": "JavaScript", "color": "#F7DF1E", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
             {"name": "UX Design", "color": "#FF00FF", "url": "https://www.nngroup.com/articles/definition-user-experience/"},
             {"name": "UI Design", "color": "#FF00FF", "url": "https://en.wikipedia.org/wiki/User_interface_design"},
