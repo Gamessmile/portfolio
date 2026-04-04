@@ -3,7 +3,7 @@
     "nav_projects": "Progetti",
     "nav_lab": "Homelab",
     "badge_available": "Disponibile per lavoro & sfide",
-    "home_title": "Studente di Informatica @ UniCT",
+    "home_title": "Studente di Informatica @ <a href=\"https://web.dmi.unict.it/corsi/l-31\" target=\"_blank\" class=\"unict-link\">UniCT</a>",
     "home_bio": "Classe 2003, studente di Informatica all'Università di Catania. Sono un programmatore a cui piacciono le sfide e il problem-solving. Mi piace 'sporcarmi le mani' con il codice, che si tratti di ottimizzare una query SQL, progettare un'esperienza utente logica o strutturare un back-end. Il mio obiettivo attuale è trasformare la forte teoria accademica in codice pulito e soluzioni pratiche.",
     "home_quote": "/* Another day, Another missing semicolon */",
     "btn_projects": "Esplora i Progetti",
@@ -12,6 +12,7 @@
     "cat_backend": "Sviluppo Software & Back-End",
     "cat_frontend": "Front-End & UX/UI",
     "cat_tools": "Database & Dev Tools",
+    "cat_languages": "Lingue Parlate",
     "err_404_msg": "Sembra che tu ti sia perso nel file system. La rotta richiesta non esiste o è stata spostata in un'altra directory.",
     "err_403_msg": "Accesso negato. Non hai i permessi necessari per visualizzare questa risorsa.",
     "err_500_msg": "Si è verificato un errore critico a livello server. L'eccezione è stata registrata nei log di sistema.",
@@ -27,5 +28,9 @@
     "btn_view_details": "Dettagli",
     "btn_view_project": "Vedi Progetto",
     "btn_open_github": "Apri su GitHub",
-    "btn_close": "Chiudi"
+    "btn_close": "Chiudi",
+    "err_github_fetch": "Impossibile caricare i progetti da GitHub al momento.",
+    "err_details": "Dettaglio errore: ",
+    "no_manual_projects": "Nessun progetto extra caricato al momento. Work in progress!",
+    "no_github_projects": "Nessuna repository GitHub configurata."
 }

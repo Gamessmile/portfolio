@@ -3,7 +3,7 @@
     "nav_projects": "Projects",
     "nav_lab": "Homelab",
     "badge_available": "Available for work & challenges",
-    "home_title": "Computer Science Student @ UniCT",
+    "home_title": "Computer Science Student @ <a href=\"https://web.dmi.unict.it/corsi/l-31\" target=\"_blank\" class=\"unict-link\">UniCT</a>",
     "home_bio": "Class of 2003, Computer Science student at the University of Catania. I'm a programmer who thrives on challenges and problem-solving. I love getting my hands dirty with code, whether it's optimizing an SQL query, designing a logical user experience, or structuring a back-end. My current goal is to translate strong academic theory into clean code and practical solutions.",
     "home_quote": "/* Another day, Another missing semicolon */",
     "btn_projects": "Explore Projects",
@@ -12,6 +12,7 @@
     "cat_backend": "Software Dev & Back-End",
     "cat_frontend": "Front-End & UX/UI",
     "cat_tools": "Database & Dev Tools",
+    "cat_languages": "Spoken Languages",
     "err_404_msg": "It looks like you're lost in the file system. The requested route does not exist or has been moved.",
     "err_403_msg": "Access denied. You don't have the required permissions to view this resource.",
     "err_500_msg": "A critical server-side error occurred. The exception has been logged in the system records.",
@@ -27,5 +28,9 @@
     "btn_view_details": "Details",
     "btn_view_project": "View Project",
     "btn_open_github": "Open on GitHub",
-    "btn_close": "Close"
+    "btn_close": "Close",
+    "err_github_fetch": "Unable to load projects from GitHub at the moment.",
+    "err_details": "Error details: ",
+    "no_manual_projects": "No extra projects loaded at the moment. Work in progress!",
+    "no_github_projects": "No GitHub repositories configured."
 }

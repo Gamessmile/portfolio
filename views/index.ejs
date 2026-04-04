@@ -1,53 +1,49 @@
 <%- include('partials/header') %>
 
-<main class="container mt-5 pt-4 mb-5">
-    <div class="row align-items-center mb-5 flex-column-reverse flex-lg-row">
-        
-        <div class="col-lg-8 mt-4 mt-lg-0">
-            <span class="badge mb-3 py-2 px-3" style="background-color: var(--nav-bg); border: 1px solid var(--border); color: var(--text-main); font-weight: 600;">
-                <span class="text-success me-2">●</span> <%= __('badge_available') %>
-            </span>
-            <h1 class="display-4 fw-bold mb-2" style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;">Santo Alessandro Sciacca</h1>
-            <h2 class="h4 mb-4" style="color: var(--accent); font-family: 'JetBrains Mono', monospace;">> <%= __('home_title') %></h2>
-            
-            <p class="mb-3" style="color: var(--text-main); line-height: 1.8; font-size: 1.1rem;">
-                <%= __('home_bio') %>
-            </p>
-            <p class="mb-4 text-muted" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
-                <%= __('home_quote') %>
-            </p>
-            
-            <div class="d-flex flex-wrap gap-3">
-                <a href="/progetti" class="btn btn-custom d-inline-flex align-items-center justify-content-center">
-                    <%= __('btn_projects') %>
-                </a>
-                <a href="https://github.com/Gamessmile" target="_blank" class="btn btn-outline-secondary d-inline-flex align-items-center justify-content-center" style="border-color: var(--border); color: var(--text-main); font-weight: 600;">
-                    <%= __('btn_github') %>
-                </a>
+    <main class="container mt-5 pt-4 mb-5">
+        <div class="row align-items-center mb-5 flex-column-reverse flex-lg-row">
+
+            <div class="col-lg-8 mt-4 mt-lg-0">
+
+                <h1 class="display-4 fw-bold mb-2"
+                    style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;">Santo Alessandro Sciacca
+                </h1>
+                <h2 class="h4 mb-4" style="color: var(--accent); font-family: 'JetBrains Mono', monospace;">> <%-
+                        __('home_title') %></h2>
+                <p class="mb-3" style="color: var(--text-main); line-height: 1.8; font-size: 1.1rem;">
+                    <%= __('home_bio') %>
+                </p>
+                <p class="mb-4 text-muted" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
+                    <%= __('home_quote') %>
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="/progetti" class="btn btn-custom d-inline-flex align-items-center justify-content-center">
+                        <%= __('btn_projects') %>
+                    </a>
+                    <a href="https://github.com/Gamessmile" target="_blank"
+                        class="btn btn-outline-secondary d-inline-flex align-items-center justify-content-center"
+                        style="border-color: var(--border); color: var(--text-main); font-weight: 600;">
+                        <%= __('btn_github') %>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center text-lg-end">
+                <img src="<%= config.profile_image %>" alt="Alessandro Sciacca" class="rounded-circle img-fluid shadow"
+                    style="max-width: 250px; border: 4px solid var(--nav-bg);" loading="eager">
             </div>
         </div>
 
-        <div class="col-lg-4 text-center text-lg-end">
-            <img src="https://github.com/Gamessmile.png" alt="Alessandro Sciacca" class="rounded-circle img-fluid shadow" style="max-width: 250px; border: 4px solid var(--nav-bg);">
-        </div>
-    </div>
-
-    <div class="row mt-5 pt-5" style="border-top: 1px solid var(--border);">
-        <div class="col-12 mb-4">
-            <h3 class="fw-bold" style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;"><%= __('home_stack_title') %></h3>
-        </div>
-        
-        <script>
-            window.categoryTranslations = {
-                "Sviluppo Software & Back-End": "<%= __('cat_backend') %>",
-                "Front-End & UX/UI": "<%= __('cat_frontend') %>",
-                "Database & Dev Tools": "<%= __('cat_tools') %>"
-            };
-        </script>
-
-        <div id="dynamic-skills" class="row w-100 m-0">
+        <div class="row mt-5 pt-5" style="border-top: 1px solid var(--border);">
+            <div class="col-12 mb-4">
+                <h3 class="fw-bold" style="color: var(--text-main); font-family: 'JetBrains Mono', monospace;">
+                    <%= __('home_stack_title') %>
+                </h3>
             </div>
-    </div>
-</main>
 
-<%- include('partials/footer') %>
+            <div id="dynamic-skills" class="row w-100 m-0"></div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>

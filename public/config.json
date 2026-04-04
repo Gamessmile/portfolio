@@ -1,4 +1,5 @@
 {
+    "profile_image": "https://avatars.githubusercontent.com/u/72171700?v=4",
     "whitelisted_repos": [
         "Gamessmile/Gioco_di_Ruolo.DB",
         "Gamessmile/Progetto-UX_Cinebium",
@@ -38,6 +39,12 @@
             {"name": "VS Code", "color": "#007ACC", "url": "https://code.visualstudio.com/"},
             {"name": "Git", "color": "#F05032", "url": "https://git-scm.com/"},
             {"name": "GitHub", "color": "#888888", "url": "https://github.com/"}
+        ],
+        "Lingue": [
+            {"name": "Italiano (Native)", "color": "#009246", "url": "https://en.wikipedia.org/wiki/Italian_language"},
+            {"name": "English (Professional)", "color": "#00205B", "url": "https://syllabus.unict.it/insegnamento.php?id=19069&eng"},
+            {"name": "Deutsch (Learning)", "color": "#FFCC00", "url": "https://it.duolingo.com/profile/Gamessmile"}
         ]
     }
+    
 }

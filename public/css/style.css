@@ -5,6 +5,7 @@
     --text-muted: #4b5563;
     --border: #d1d5db;
     --btn-hover-filter: brightness(1.2);
+    --skill-hover-fx: brightness(0.85) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.40));
 }
 
 [data-theme="dark"] {
@@ -14,6 +15,7 @@
     --text-muted: #768390;
     --border: #444c56;
     --btn-hover-filter: brightness(1.2);
+    --skill-hover-fx: brightness(0.95) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 [data-theme="true-black"] {
@@ -23,6 +25,7 @@
     --text-muted: #a3a3a3;
     --border: #262626;
     --btn-hover-filter: brightness(0.8);
+    --skill-hover-fx: brightness(1.5) drop-shadow(0 4px 10px rgba(255, 255, 255, 0.4));
 }
 
 body {
@@ -89,6 +92,10 @@ h1, h2, h3, .navbar-brand {
 
 .custom-footer {
     border-top: 1px solid var(--border);
+    position: relative;
+    z-index: 20;
+    margin-top: 8rem !important; 
+    padding-top: 2rem !important;
 }
 
 .footer-link {
@@ -194,14 +201,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     transition: opacity 0.3s ease;
 }
 
-.custom-footer {
-    border-top: 1px solid var(--border);
-    position: relative;
-    z-index: 20;
-    margin-top: 8rem !important; 
-    padding-top: 2rem !important;
-}
-
 .dropdown-menu {
     background-color: var(--nav-bg) !important;
     border: 1px solid var(--border) !important;
@@ -246,7 +245,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     border-radius: 12px;
     padding: 15px 25px;
     z-index: 9999;
-    display: none; /* Nascosto di default */
+    display: none;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -256,4 +255,68 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     color: var(--text-main);
     font-size: 0.9rem;
     margin-right: 15px;
+}
+
+:focus-visible {
+    outline: 2px solid var(--text-main);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.skill-badge {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px);
+    filter: var(--skill-hover-fx); 
+}
+
+#modalBody pre {
+    background-color: #1a1e23;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    color: #e5e5e5;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--nav-bg) 25%, var(--border) 50%, var(--nav-bg) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite linear;
+    border-radius: 4px;
+}
+
+.skeleton-title {
+    height: 1.5rem;
+    width: 60%;
+}
+
+.skeleton-text {
+    height: 1rem;
+    width: 100%;
+}
+
+.skeleton-badge {
+    height: 1.2rem;
+    width: 45px;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.unict-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dashed var(--border);
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.unict-link:hover {
+    color: var(--text-main);
+    border-bottom-style: solid;
+    border-bottom-color: var(--text-main);
 }
